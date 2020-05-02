@@ -1,10 +1,11 @@
 import React from "react"
 import Header from "../components/header"
 
-const handleClick() => {
-    data = {
-      'object': 'Next Button',
-      'action': 'click'
+
+const handleClick = () => {
+    const data = {
+      object: 'Next Button',
+      action: 'click'
     }
     window.gtag("event", "click", { ...data })
   }
