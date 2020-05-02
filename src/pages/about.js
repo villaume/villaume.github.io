@@ -17,8 +17,8 @@ export default () => (
     <Header headerText="About Gatsby" />
     <p>Such wow. Very React.</p>
     <Button
-          key=1
-          active=True
+          key={1}
+          active={True}
           onClick={handleClick}
 
         />
