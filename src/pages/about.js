@@ -1,14 +1,17 @@
 import React from "react"
 import Header from "../components/header"
-import Button from "../components/primarybutton"
-
+// import { PrimaryButton } from '../components/primarybutton'
+import { Button } from 'rebass'
+import Form from "../components/form"
 const handleClick = () => {
     const data = {
       object: 'Next Button',
       action: 'click'
     }
-    window.gtag("event", "click", { ...data })
-  }
+    if(typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "click", { ...data })
+    }
+}
 
 
 export default () => (
@@ -16,10 +19,7 @@ export default () => (
   <div style={{ color: `teal` }}>
     <Header headerText="About Gatsby" />
     <p>Such wow. Very React.</p>
-    <Button
-          disabled={false}
-          onClick={handleClick}
-
-        />
+    <Button variant='secondary' mr={2} onClick={handleClick}>Primary</Button>
+    <Form></Form>
   </div>
 )
