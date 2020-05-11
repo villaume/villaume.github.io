@@ -9,7 +9,7 @@ const handleClick = () => {
       action: 'click'
     }
     if(typeof window !== "undefined" && window.gtag) {
-      window.gtag("config". {"user_id": '0101h'})
+      window.gtag("config", {"user_id": '0101h'})
       window.gtag("event", "click", { ...data })
 
     }
