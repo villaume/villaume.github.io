@@ -3,7 +3,6 @@ import Header from "../components/header"
 // import { PrimaryButton } from '../components/primarybutton'
 import { Button } from 'rebass'
 import Form from "../components/form"
-import firebase from "gatsby-plugin-firebase"
 
 const handleClick = () => {
     const data = {
@@ -19,14 +18,6 @@ const handleClick = () => {
 
 const AboutUs = () => {
   // const firebase = useContext(useFirebase)
-
-  React.useEffect(() => {
-
-      firebase
-        .analytics()
-        .logEvent("visited_about_us")
-    }, [])
-
       return (
         <div style={{ color: `teal` }}>
           <Header headerText="About Gatsby" />
