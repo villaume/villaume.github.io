@@ -41,32 +41,7 @@ module.exports = {
         // enable ip anonymization
         anonymize: true,
       },
-    },
-    {
-    resolve: "gatsby-plugin-firebase",
-    options: {
-       features: {
-         auth: false,
-         database: false,
-         firestore: false,
-         storage: false,
-         messaging: false,
-         functions: false,
-         performance: false,
-         analytics:true,
-       },
-       credentials: {
-         apiKey: 'AIzaSyCNXsqyCpuyLnXne2pJDA-1eMi0YjZltNI',
-         authDomain: "tracking-sandbox-684bf.firebaseapp.com",
-         databaseURL: "https://tracking-sandbox-684bf.firebaseio.com",
-         projectId: "tracking-sandbox-684bf",
-         storageBucket: "tracking-sandbox-684bf.appspot.com",
-         messagingSenderId: "252979739625",
-         appId: "1:252979739625:web:5d34a03ab609583f6d6978",
-         measurementId: "G-Z8YKV2R4VT"
-       }
-      },
-     },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
